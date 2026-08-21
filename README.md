@@ -1,1 +1,5 @@
-This is a C Programming which I have done 
+#HARSHIT VERMA
+<br>
+This is all my C Programing which I have done.
+<br>
+Author - Harshit Verma 
