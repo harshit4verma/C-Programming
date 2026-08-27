@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+   
+    int matrix[3][3];
+    int i, j;
+
+    // Step 1: Insert elements into the matrix
+    printf("Enter elements for a 3x3 matrix:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("Element at [%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+   
+    printf("\nThe entered 3x3 matrix is:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("%d\t", matrix[i][j]); 
+        }
+        printf("\n"); 
+    }
+
+    return 0;
+}
