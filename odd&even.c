@@ -1,15 +1,23 @@
 #include <stdio.h>
 
-int main() {
-    int num;
+int main()
+{
+    int a[2][2], i, j;
 
-    printf("Enter an number: ");
-    scanf("%d", &num);
+    printf("Enter 4 elements:\n");
 
-    if (num % 2 == 0) {
-        printf("%d is an even number.\n", num);
-    } else {
-        printf("%d is an odd number.\n", num);
+    for(i = 0; i < 2; i++)
+        for(j = 0; j < 2; j++)
+            scanf("%d", &a[i][j]);
+
+    printf("Transpose Matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+            printf("%d\t", a[j][i]);
+
+        printf("\n");
     }
 
     return 0;
